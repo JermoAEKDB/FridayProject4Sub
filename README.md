@@ -13,6 +13,8 @@ Display the Mad Lib: Finally, the completed Mad Lib story is printed to the cons
 
 When you run this code, it will prompt the user to enter words for the Mad Lib, and then it will display the completed Mad Lib story based on the provided template.
 
+
+
 For Proj-2ChatGPT, here is a list of notes regarding the code created by ChatGPT:
 
 Import the random module for generating random numbers.
@@ -52,3 +54,30 @@ Run the main function if the script is executed directly.
 
 The if __name__ == "__main__": block ensures that the main function is executed only if the script is run as the main program, not when it's imported as a module. This is a common Python idiom.
 
+
+
+For Proj-3ChatGPT, here is a list of notes regarding the code created by ChatGPT:
+
+Import the random module to use its functions for shuffling the order of questions in the quiz.
+
+Define a dictionary (quiz_questions) that contains trivia questions as keys and their correct answers as values.
+
+Convert the dictionary items into a list (questions_list) to enable randomization of the order of questions.
+
+Shuffle the list using the random.shuffle() function to present the questions in a random order for each quiz session.
+
+Initialize a variable (varCorrectAnswer) to keep track of the user's correct answers throughout the quiz.
+
+Begin a loop to iterate through the shuffled list of questions and answers, ensuring that each question is presented to the user.
+
+Display the current question to the user, iterating through the shuffled list.
+
+Prompt the user to input their answer for the displayed question.
+
+Check if the user's answer (converted to lowercase) matches the correct answer for the current question.
+
+If the user's answer is correct, print a success message and increment the user's score (varCorrectAnswer).
+
+If the user's answer is incorrect, print the correct answer for the current question.
+
+After completing all questions, display the user's final score in the quiz by dividing the correct answers (varCorrectAnswer) by the total number of questions (len(quiz_questions)).
